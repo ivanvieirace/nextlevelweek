@@ -41,6 +41,7 @@ body::after {
 
 #page-search-results main {
   margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 #page-search-results main h4 {
