@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-@media (max-width: 300px) {
-  #page-search-results main .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-  }
-}
-
 @media (max-width: 900px) {
   #page-home {
     background: none;
@@ -29,7 +21,7 @@
     align-items: center;
   }
 
-  #page-search-results .cards {
+  #page-search-results main .cards {
     grid-template-columns: 1fr;
   }
 }
