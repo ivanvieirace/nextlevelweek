@@ -2,23 +2,20 @@
 const express = require("express");
 const server = express();
 
-//configurar a pasta public para o express
+// Express acesso a pasta Public
 server.use(express.static("public"));
 
-//Utilizando Template Engine
+// Nunjucks
 const nunjucks = require("nunjucks");
 nunjucks.configure("src/views", {
   express: server,
   noCache: true,
 });
 
-// Servidor Express Iniciado na porta 3000
+// Express escutando na porta 3000
 server.listen(3000);
-console.log("Servidor Rodando e Escutando na porta 3000");
 
-//Configuração das Rotas da Aplicação:
-
-// Rota da Página Inicial:
+// Rotas
 server.get("/", (req, res) => {
   return res.render("index.html");
 });
